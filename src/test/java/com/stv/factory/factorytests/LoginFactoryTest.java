@@ -24,7 +24,7 @@ public class LoginFactoryTest extends BasicFactoryTest {
         Assert.assertTrue(loginFactoryPage.isClickNeedHelpLinkDisplayed(), "The Need Help link isn't displayed");
     }
 
-    @Test(description = "Verify that clicking the 'Need Help' link redirects to the correct help page URL")
+    @Test(description = "Verify that clicking the 'Need Help' link redirects to the correct help page URL", dependsOnMethods = "testClickForgotPassword")
 
     public void testClickNeedHelpLink() {
 
